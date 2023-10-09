@@ -31,21 +31,23 @@ int main(){
         cin >> row;
         cout << "Enter a column: ";
         cin >> column;
+        
         if(PlayerMove(GameBoard, row, column, Player)) {
+
             GameBoard[row][column] = Player;
             turns++;
             bool Valid = PlayingGame(GameBoard,Player); 
-            if(Valid == true){
+
+            if(Valid == true)
                 break;
-            }
-    if (Player == 'X') {
+            
+            if (Player == 'X')
                 Player = 'O';
-            } else {
+            else 
                 Player = 'X';
-            }
-        } else {
+        } 
+        else 
             cout << "Invalid move, try again." << endl;
-        }
     }
 
    
