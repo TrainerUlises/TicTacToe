@@ -1,6 +1,7 @@
+/* this is a tic tac toe project designed by Ulises Romero */
+
 #include <iostream>
 using namespace std;
-//test camilo
 
 void GameBoardDisplay(char GameBoard[3][3]);
 bool PlayingGame(char GameBoard[3][3], char player);
