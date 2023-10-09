@@ -27,8 +27,9 @@ int main(){
         int row;
         int column;
         GameBoardDisplay(GameBoard);
-        cout << "Player " << Player << " enter a row and column number ";
+        cout << "Player " << Player << " enter a row: ";
         cin >> row;
+        cout << "Enter a column: ";
         cin >> column;
         if(PlayerMove(GameBoard, row, column, Player)) {
             GameBoard[row][column] = Player;
